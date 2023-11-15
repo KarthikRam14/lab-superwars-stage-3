@@ -30,7 +30,7 @@ const initPlayers = (players) => {
         name:player,
         image:`images/super-${index+1}.png`,
         strength:getRandomStrength(),
-        type: index % 2 === 0 ? "hero":"villain",
+        type: index%2 == 0 ? "hero":"villain",
     }))
     return detailedPlayers;
 }
